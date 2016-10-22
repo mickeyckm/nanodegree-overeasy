@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">Overeasy</string>
-    <string name="about">At OverEasy, we take our comfort food seriously. So seriously we did it twice. </string>
+    <string name="about_title">About Overeasy</string>
+    <string name="about">At OverEasy, we take our comfort food seriously. So seriously we did it twice. Tasty shakes. Bangin’ burgers. Good ol’ Mac and Cheeks. Served alongside a healthy dose of nostalgia, we love messing with the classics and kicking things up a notch. Familiar but never boring. We’re your irreverent younger sibling. A friend for the good times and bad. Who said love always has to hurt? Get ready because we’re about to shake your buns.</string>
+    <string name="opening_title">Opening Hours</string>
+    <string name="opening_weekdays">Mon to Thu: 5pm – 1am</string>
+    <string name="opening_weekends">Fri to Sat: 5pm – 3am</string>
+    <string name="reservations_title">Reservations</string>
+    <string name="reservations_phone">+65 6684 1453</string>
+    <string name="reservations_email">fullerton@overeasy.com.sg</string>
 </resources>

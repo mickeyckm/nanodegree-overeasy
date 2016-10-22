@@ -5,138 +5,142 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:paddingBottom="10dp"
     tools:context="ng.cheo.android.overeasy.MainActivity">
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="6"
+        android:layout_weight="5"
         android:scaleType="centerCrop"
         android:src="@drawable/sliders" />
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="2"
-        android:orientation="horizontal">
-
-        <ImageView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:src="@drawable/icon_hotdog" />
+        android:layout_weight="7">
 
         <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="4"
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp"
-            android:paddingTop="15dp"
-            android:paddingBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <TextView
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="About Overeasy"
-                android:textStyle="bold"
-                android:layout_marginBottom="5dp"/>
+                android:orientation="horizontal">
 
-            <TextView
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/icon_hotdog" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:padding="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/about_title"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="5dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/about" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/about" />
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/icon_martini" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:padding="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/opening_title"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="5dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/opening_weekdays" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/opening_weekends" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/icon_macaroni" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:padding="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/reservations_title"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="5dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:autoLink = "phone"
+                        android:text="@string/reservations_phone" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:autoLink = "all"
+                        android:text="@string/reservations_email" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
 
         </LinearLayout>
 
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="2"
-        android:orientation="horizontal">
-
-        <ImageView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:src="@drawable/icon_martini" />
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="4"
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp"
-            android:paddingTop="15dp"
-            android:paddingBottom="10dp"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Opening Hours"
-                android:textStyle="bold"
-                android:layout_marginBottom="5dp"/>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Mon to Thu: 5pm – 1am" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Fri to Sat: 5pm – 3am" />
-
-        </LinearLayout>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="2"
-        android:orientation="horizontal">
-
-        <ImageView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:src="@drawable/icon_macaroni" />
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="4"
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp"
-            android:paddingTop="15dp"
-            android:paddingBottom="10dp"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Reservations"
-                android:textStyle="bold"
-                android:layout_marginBottom="5dp"/>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="+65 6684 1453" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="fullerton@overeasy.com.sg" />
-
-        </LinearLayout>
-
-    </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>
